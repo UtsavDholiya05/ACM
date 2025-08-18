@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h1>Register</h1>
+        
+        <!-- Student Name -->
+        <label for="student-name">Student Name</label>
+        <input type="text" id="student-name" name="student-name" required>
+        
+        <!-- SAP ID -->
+        <label for="sap-id">SAP ID</label>
+        <input type="text" id="sap-id" name="sap-id" required>
+        
+        <!-- Roll Number -->
+        <label for="roll-number">Roll Number</label>
+        <input type="text" id="roll-number" name="roll-number" required>
+        
+        <!-- Gender -->
+        <label>Gender</label>
+        <div class="radio-group">
+            <label class="radio-label">
+                <input type="radio" name="gender" value="male" required>
+                <span>Male</span>
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="gender" value="female" required>
+                <span>Female</span>
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="gender" value="other" required>
+                <span>Other</span>
+            </label>
+        </div>
+        
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <!-- Contact Number -->
+        <label for="contact">Contact Number</label>
+        <input type="text" id="contact" name="contact" required>
+        
+        <!-- Email ID -->
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Department -->
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="cse">Computer Science Engineering</option>
+            <option value="it">Information Technology</option>
+            <option value="ece">Electronics & Communication</option>
+            <option value="me">Mechanical Engineering</option>
+            <option value="ce">Civil Engineering</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <!-- Current Semester -->
+        <label for="semester">Current Semester</label>
+        <select id="semester" name="semester" required>
+            <option value="">Select Semester</option>
+            <option value="1">1st Semester</option>
+            <option value="2">2nd Semester</option>
+            <option value="3">3rd Semester</option>
+            <option value="4">4th Semester</option>
+            <option value="5">5th Semester</option>
+            <option value="6">6th Semester</option>
+            <option value="7">7th Semester</option>
+            <option value="8">8th Semester</option>
+        </select>
+        
+        <!-- Year of Study -->
+        <label for="year">Year of Study</label>
+        <select id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+        
+        <!-- GitHub Profile -->
+        <label for="github">GitHub Profile</label>
+        <input type="url" id="github" name="github" placeholder="https://github.com/username">
+        
+        <!-- Preferred Track -->
+        <label for="track">Preferred Track / Domain</label>
+        <select id="track" name="track" required>
+            <option value="">Select Track</option>
+            <option value="web-dev">Web Development</option>
+            <option value="mobile-dev">Mobile Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="ai-ml">AI/Machine Learning</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="ui-ux">UI/UX Design</option>
+            <option value="competitive">Competitive Programming</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <!-- Interests -->
+        <label>Interests (choose all that apply)</label>
+        <div class="checkbox-group">
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="programming">
+                <span>Programming</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="design">
+                <span>Design</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="research">
+                <span>Research</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="hackathons">
+                <span>Hackathons</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="workshops">
+                <span>Workshops</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="networking">
+                <span>Networking</span>
+            </label>
+        </div>
+        
+        <!-- Upload Photo -->
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        
+        <!-- Upload Resume -->
+        <label for="resume">Upload Resume (PDF/DOC)</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        
+        <!-- About Yourself -->
+        <label for="about">About yourself (in less than 30 words)</label>
+        <textarea id="about" name="about" rows="3" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+        
+        <!-- Login Link -->
+        <div class="register-link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </form>
+</body>
+</html>

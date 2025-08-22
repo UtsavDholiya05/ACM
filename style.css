@@ -88,6 +88,33 @@ input[type="submit"]:hover {
     text-decoration: underline;
 }
 
+/* Show Password Checkbox Styling */
+.show-password {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 15px 0;
+    gap: 8px;
+}
+
+.show-password input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.show-password label {
+    font-size: 0.9rem;
+    color: #666;
+    cursor: pointer;
+    margin: 0;
+    font-weight: normal;
+}
+
+.show-password label:hover {
+    color: #4285f4;
+}
+
 /* Additional styles for registration form */
 .radio-group,
 .checkbox-group {
